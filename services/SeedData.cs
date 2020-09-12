@@ -21,21 +21,21 @@ namespace webapi_tokenauth.services
         public static void SeedProduct(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>().HasData(
-                new Product { Id = 1, Title = "product-1", Description = "", Img = "", Category = new Category { Id = 1 } },
-                new Product { Id = 2, Title = "product-2", Description = "", Img = "", Category = new Category { Id = 1 } },
-                new Product { Id = 3, Title = "product-3", Description = "", Img = "", Category = new Category { Id = 1 } },
-                new Product { Id = 4, Title = "product-4", Description = "", Img = "", Category = new Category { Id = 1 } },
-                new Product { Id = 5, Title = "product-5", Description = "", Img = "", Category = new Category { Id = 2 } },
-                new Product { Id = 6, Title = "product-6", Description = "", Img = "", Category = new Category { Id = 2 } },
-                new Product { Id = 7, Title = "product-7", Description = "", Img = "", Category = new Category { Id = 3 } },
-                new Product { Id = 8, Title = "product-8", Description = "", Img = "", Category = new Category { Id = 3 } },
-                new Product { Id = 9, Title = "product-9", Description = "", Img = "", Category = new Category { Id = 4 } },
-                new Product { Id = 10, Title = "product-10", Description = "", Img = "", Category = new Category { Id = 5 } },
-                new Product { Id = 11, Title = "product-11", Description = "", Img = "", Category = new Category { Id = 1 } },
-                new Product { Id = 11, Title = "product-12", Description = "", Img = "", Category = new Category { Id = 5 } },
-                new Product { Id = 13, Title = "product-13", Description = "", Img = "", Category = new Category { Id = 1 } },
-                new Product { Id = 14, Title = "product-14", Description = "", Img = "", Category = new Category { Id = 3 } },
-                new Product { Id = 15, Title = "product-15", Description = "", Img = "", Category = new Category { Id = 1 } }
+                new Product { Id = 1, Title = "product-1", Description = "", Img = "", CategoryId = 1 },
+                new Product { Id = 2, Title = "product-2", Description = "", Img = "", CategoryId = 1 },
+                new Product { Id = 3, Title = "product-3", Description = "", Img = "", CategoryId = 1 },
+                new Product { Id = 4, Title = "product-4", Description = "", Img = "", CategoryId = 1 },
+                new Product { Id = 5, Title = "product-5", Description = "", Img = "", CategoryId = 2 },
+                new Product { Id = 6, Title = "product-6", Description = "", Img = "", CategoryId = 2 },
+                new Product { Id = 7, Title = "product-7", Description = "", Img = "", CategoryId = 3 },
+                new Product { Id = 8, Title = "product-8", Description = "", Img = "", CategoryId = 3 },
+                new Product { Id = 9, Title = "product-9", Description = "", Img = "", CategoryId = 4 },
+                new Product { Id = 10, Title = "product-10", Description = "", Img = "", CategoryId = 5 },
+                new Product { Id = 11, Title = "product-11", Description = "", Img = "", CategoryId = 1 },
+                new Product { Id = 12, Title = "product-12", Description = "", Img = "", CategoryId = 5 },
+                new Product { Id = 13, Title = "product-13", Description = "", Img = "", CategoryId = 1 },
+                new Product { Id = 14, Title = "product-14", Description = "", Img = "", CategoryId = 3 },
+                new Product { Id = 15, Title = "product-15", Description = "", Img = "", CategoryId = 1 }
             );
         }
     }

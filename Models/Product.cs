@@ -9,6 +9,7 @@
         public string Img { get; set; }
         // public string Pic => string.IsNullOrEmpty(Img) ? "/img/no-image.png" : "/" + Img;
 
+        public int? CategoryId { get; set; }
         public virtual Category Category { get; set; }
     }
 }

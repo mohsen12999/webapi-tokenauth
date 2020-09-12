@@ -21,6 +21,7 @@ namespace webapi_tokenauth.Models
             modelBuilder.Entity<Category>()
                 .HasMany(c => c.Products)
                 .WithOne(p => p.Category)
+                .HasForeignKey(p=>p.CategoryId)
                 .OnDelete(DeleteBehavior.SetNull);
 
             #region seed
