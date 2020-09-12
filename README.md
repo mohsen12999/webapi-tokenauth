@@ -1,8 +1,11 @@
 # Web Api with Token Authentication
 
-- base on : https://dev.to/_patrickgod/authentication-with-json-web-tokens-in-net-core-3-1-29bd
-
-https://www.syncfusion.com/blogs/post/how-to-build-crud-rest-apis-with-asp-net-core-3-1-and-entity-framework-core-create-jwt-tokens-and-secure-apis.aspx
+- https://jwt.io/
+- https://dev.to/_patrickgod/authentication-with-json-web-tokens-in-net-core-3-1-29bd
+- https://www.syncfusion.com/blogs/post/how-to-build-crud-rest-apis-with-asp-net-core-3-1-and-entity-framework-core-create-jwt-tokens-and-secure-apis.aspx
+- https://medium.com/@vaibhavrb999/jwt-authentication-authorization-in-net-core-3-1-e762a7abe00a
+- https://codeburst.io/jwt-auth-in-asp-net-core-148fb72bed03
+- https://blog.elmah.io/how-to-secure-asp-net-core-with-oauth-and-json-web-tokens/
 
 ## steps
 
@@ -19,6 +22,8 @@ https://www.syncfusion.com/blogs/post/how-to-build-crud-rest-apis-with-asp-net-c
 - `dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design`
 - `dotnet add package Microsoft.EntityFrameworkCore.Tools`
 - `dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
+
+- `dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore`
 - ``
 - ``
 
@@ -37,3 +42,8 @@ https://www.syncfusion.com/blogs/post/how-to-build-crud-rest-apis-with-asp-net-c
 ## routes
 
 - [`WeatherForecast`](localhost:5000/WeatherForecast)
+
+## Database
+
+- `dotnet ef migrations add InitialCreate`
+- `dotnet ef database update`
