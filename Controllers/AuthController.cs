@@ -17,12 +17,12 @@ namespace webapi_tokenauth.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    public class LoginController : ControllerBase
+    public class AuthController : ControllerBase
     {
         private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _context;
 
-        public LoginController(ApplicationDbContext context, IConfiguration configuration)
+        public AuthController(ApplicationDbContext context, IConfiguration configuration)
         {
             _configuration = configuration;
             _context = context;
