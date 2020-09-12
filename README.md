@@ -6,6 +6,9 @@
 - https://medium.com/@vaibhavrb999/jwt-authentication-authorization-in-net-core-3-1-e762a7abe00a
 - https://codeburst.io/jwt-auth-in-asp-net-core-148fb72bed03
 - https://blog.elmah.io/how-to-secure-asp-net-core-with-oauth-and-json-web-tokens/
+- https://jasonwatmore.com/post/2019/10/21/aspnet-core-3-basic-authentication-tutorial-with-example-api#running-react
+- https://www.syncfusion.com/blogs/post/how-to-build-crud-rest-apis-with-asp-net-core-3-1-and-entity-framework-core-create-jwt-tokens-and-secure-apis.aspx
+- https://medium.com/@vaibhavrb999/jwt-authentication-authorization-in-net-core-3-1-e762a7abe00a
 
 ## steps
 
