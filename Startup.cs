@@ -39,16 +39,23 @@ namespace webapi_tokenauth
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
+                    options.SaveToken = true;
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
                         ValidateLifetime = true, 
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
                             .GetBytes(Configuration.GetSection("JWT:SecretKey").Value)),
-                        ValidateIssuer = false,
-                        ValidateAudience = false
+                        ValidIssuer = Configuration["Jwt:Issuer"],
+                        ValidAudience = Configuration["Jwt:Audience"],
                     };
                 });
+
+            // services.AddAuthorization(config =>
+            //     {
+            //     config.AddPolicy(Policies.Admin, Policies.AdminPolicy());
+            //     config.AddPolicy(Policies.User, Policies.UserPolicy());
+            //     });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
