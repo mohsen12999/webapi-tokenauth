@@ -44,7 +44,9 @@
 
 ## routes
 
-- [`WeatherForecast`](localhost:5000/WeatherForecast)
+- Login: [`/auth`](localhost:5000/auth) with `username` & `password`
+- Register: [`/auth/register`](localhost:5000/auth/register) with `email`, `username` & `password`
+- Test Access: [`/auth/access`](localhost:5000/auth/access) with `Authorization`= `Bearer [token]` in header
 
 ## Database
 
